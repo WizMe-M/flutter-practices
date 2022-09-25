@@ -62,10 +62,14 @@ flutter:
     - assets/
     - assets/hamburger-btn.png
     - assets/medinow.png
-    - assets/meditation.png
     - assets/play.png
     - assets/standing-man.png
     - assets/whale.png
+    - assets/meditation.png
+    - assets/2.0x/
+    - assets/2.0x/meditation.png
+    - assets/3.0x/
+    - assets/3.0x/meditation.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
