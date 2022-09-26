@@ -74,14 +74,42 @@ class _MainScreenState extends State<MainScreen> {
                   ]
                 ),
 
-                const Text(
-                  'Secrets of Atlantis',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 34,
-                    fontFamily: 'Montserrat',
-                    package: 'Montserrat'
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 8),
+                  child: Text(
+                    'Secrets of Atlantis',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 34,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
+                ),
+
+                TextButton(
+                  onPressed: () {},
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all<OutlinedBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        side: const BorderSide(color: Colors.orangeAccent, width: 1)
+                      )
+                    ),
+                    padding: MaterialStateProperty.all<EdgeInsets>(
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 35)
+                    ),
+                    foregroundColor: MaterialStateProperty.all<Color>(
+                      Colors.orangeAccent
+                    ),
+                    textStyle: MaterialStateProperty.all<TextStyle>(
+                      const TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600
+                      )
+                    )
+                  ), 
+                  child: const Text('Follow'),
                 )
               ],
             ),
