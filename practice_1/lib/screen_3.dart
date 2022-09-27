@@ -43,7 +43,10 @@ class _MainScreenState extends State<MainScreen> {
                         child: Image.asset('assets/whale.png')
                       ),
           
-                      const Arc(width: 400, height: 110),
+                      const Positioned(
+                        bottom: -10, 
+                        child: Arc(width: 400, height: 110)
+                      ),
                 
                       Positioned.directional(
                         textDirection: TextDirection.ltr,
@@ -285,23 +288,20 @@ class _MainScreenState extends State<MainScreen> {
                                   ),
                                   child: const Text('Fantasy')
                                 ),
+
                                 const Spacer(),
                                 IconButton(
-                                  onPressed: () {}, 
-                                  icon: const Icon(Icons.notifications_none_rounded, 
-                                    color: Colors.white,
-                                    size: 35,
-                                  )
+                                  onPressed: () => true, 
+                                  iconSize: 35,
+                                  color: Colors.white,
+                                  icon: const Icon(Icons.notifications_none_rounded)
                                 )
                               ],
                             ),
                           ),
                           
                           Container(
-                            // clipBehavior: Clip.hardEdge,
-                            // decoration: BoxDecoration(
-                              color: Colors.deepPurple.shade900,
-                            // ),
+                            color: Colors.deepPurple.shade900,
                             child: SizedBox.fromSize(
                               size: const Size.fromHeight(80),
                               child: Padding(
@@ -379,10 +379,12 @@ class _MainScreenState extends State<MainScreen> {
                                 ),
                               ),
                             ),
+                            
                             IconButton(
                               onPressed: () {}, 
-                              icon: const Icon(Icons.share, color: Colors.black87)
-                              )
+                              color: Colors.black87,
+                              icon: const Icon(Icons.share)
+                            )
                           ],
                         ),
                       ),
