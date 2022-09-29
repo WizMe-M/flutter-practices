@@ -39,6 +39,9 @@
 1. Кнопка изначально немного более стилизована. Имеет возможности настройки эффектов от разных видов нажатий
 2. Простая кнопка с прозрачным фоном (но в целом реагирует на нажатия также как и `ElevatedButton`). Имеет возможности для настройки текста
 
+![Screen 1](https://github.com/WizMe-M/flutter-practices/blob/practice_1/images/p1-screen-1.jpg?raw=true)
+
+
 ---
 
 ### Второй экран
@@ -93,6 +96,9 @@
 В нашем случае, это тот же шаблон **itemBuilder**, но вместо использования `podcasts[index]` будет просто `e`, потому что это текущий элемент списка.
 
 Единственнный минус данного решения - отсутствие встроенного разделителя (`Divider()`) из `ListView.separated(separatorBuilder: (ctx, index) => Divider())`, но и это при желании можно исправить.
+
+![Screen 2 (with spread operator)](https://github.com/WizMe-M/flutter-practices/blob/practice_1/images/p1-screen-2.jpg?raw=true)
+
 
 ---
 
@@ -158,6 +164,12 @@ avatar(double radius, {Color backgroundColor = Colors.orange, double borderWidth
 
 Последний элемент в столбце - это желтый закругленный контейнер с Row внутри.  
 Он содержит Image, Text и IconButton.
+
+
+![Screen 3 (part 1)](https://github.com/WizMe-M/flutter-practices/blob/practice_1/images/p1-screen-3.1.jpg?raw=true)
+
+![Screen 3 (part 2)](https://github.com/WizMe-M/flutter-practices/blob/practice_1/images/p1-screen3.2.jpg?raw=true)
+
 
 ---
 
